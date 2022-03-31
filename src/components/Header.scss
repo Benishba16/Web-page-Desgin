@@ -1,0 +1,144 @@
+$shadow-color:#1183d6;
+
+.container{
+    display: flex;
+    justify-content: space-between;
+    margin-left: 70px;
+    margin-right: 70px;
+    margin-top: 30px;
+    margin-bottom: 40px;
+    // border: 2px solid black;
+}
+
+.header__1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    height: 15%;
+    // border: 2px solid green;
+
+    &__logoName{
+        display: flex;
+        align-items: center;
+        font-size: 2.2vw;
+        // border: 2px solid magenta;
+        gap: 65px;
+    }
+
+    &__logo{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        // background-image: url("https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQzi8oF-wXxBmF5NJ8YmCmaV8mkv5XFikUTz40QqVCSfyIrVjKJ");
+        background-image: url("./images/dropletlogo.png");
+        background-repeat: no-repeat;
+        background-size: contain;
+        width: 4vw;
+        height: 4vw;
+        // border: 2px solid red;
+        border-radius: 50%;
+    }
+
+    &__title{
+        margin-left: -35px;
+        span{
+            font-weight: bold;
+        }
+    }
+
+    &__search {
+        // margin-left: -30px;
+        input {
+        background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' class='bi bi-search' viewBox='0 0 16 16'%3E%3Cpath d='M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z'%3E%3C/path%3E%3C/svg%3E");
+        background-repeat: no-repeat;
+        background-position: 25px 18px;
+        background-size: 15px;
+        padding: 10px;
+        width: 20vw;
+        border-radius: 3px;
+        height: 5vh;
+        font-size: 17px;
+        border: 2px solid #ccc;
+        margin-left: -10px;
+        text-indent: 30px;
+        padding-left: 25px;
+        // border: 2px solid yellow;
+        color: black;
+    }
+
+        input:focus {
+            box-shadow: 0 0 3px 0 #1890ff;
+            outline: none;
+            border: none;
+            border-radius: 3px solid #1890ff;
+        }
+    }
+}
+
+.header__2{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    // border: 2px solid magenta;
+
+    &__para__1,&__para__2, &__para__3{
+        font-weight: bold;
+        font-size: 1.3vw;
+        width: 8vw;
+        padding: 10px;
+        // border: 2px solid yellow;
+    }
+
+    &__para__3{
+        margin-left: 15px;
+    }
+
+    &__para__image{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-image: url("https://i.pinimg.com/736x/a7/66/92/a766923c29305a16ce461b2ae54f4c68.jpg");
+        background-repeat: no-repeat;
+        border-radius: 50%;
+        width: 4vw;
+        height: 4vw;
+        background-size: 110%;
+        background-position: contain;
+        margin-left: 30px;
+        // border: 2px solid black;
+
+        span{
+            margin-left: 40px;
+            margin-bottom: 60px;
+            margin-top: -50px;
+            font-size: 100px;
+            color: #2dc653;
+        }
+    }
+
+    &__para__2{
+        // border: 2px solid black;
+        width: 14vw;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+    }
+
+    &__para__box{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding-left: 15px;
+        padding-right: 15px;
+        padding-top: 15px;
+        padding-bottom: 15px;
+        height: 1vh;
+        border-radius: 3px;
+        color: $shadow-color;
+        // background-color: rgba(137, 196, 244, 0.2) ;
+        background-color: rgba(0, 181, 204,0.1);
+    }
+}
+
