@@ -23,7 +23,7 @@ function Header() {
             <div className='header__2__para__box'>4</div>
         </div>
         <div className='header__2__para__3'>My Contacts</div>
-        <div className='header__2__para__image'><span>.</span></div>
+        <div className='header__2__para__image'><span></span></div>
       </div>
     </div>
     <hr className='horizontal__line'/>

@@ -1,0 +1,100 @@
+$primary-color:#00b4d8;
+
+.entire{
+    margin-left: 70px;
+    margin-right: 70px;
+    margin-top: 60px;
+    display: flex;
+}
+
+.user__image{
+    // border: 2px solid black;
+    background-image: url("./images/images.jpg");
+    width: 50vw;
+    height: 50vh;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.user__data{
+    // border: 2px solid red;
+    // height: 49vh;
+    width: 59vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    &__info{
+        display: flex;
+        align-items: center;
+        // justify-content: space-between;
+        width: 25vw;
+        // border: 2px solid yellow; 
+        gap: 20px;
+    }
+
+    &__city{
+        display: flex;
+        align-items: center;
+        margin-bottom: -6px;
+        // border: 2px solid green;
+
+        &__location{
+            // border: 2px solid lawngreen;
+            background-image: url("https://www.pngitem.com/pimgs/m/94-941550_location-icon-png-grey-transparent-png-location-icon.png");
+            width: 2vw;
+            height: 3vh;
+            background-size: contain;
+            background-repeat: no-repeat;
+            // background-position: 6px -1px;
+        }
+
+        &__name{
+            // border: 2px solid blue;
+            color: #ccc;
+            font-size: 0.8rem;
+            font-weight: bold;
+        }
+    }
+
+    &__bookmark{
+        display: flex;
+        align-items: center;
+        &__image{
+            // border: 2px solid hotpink;
+            background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQCjP9MQbdQLwBRSEKTYmHcZwCXLv9FIl_ZM5kMzCp0-8L6TaInSRpLvH4QgFIb0EwnA6s&usqp=CAU");
+            width: 3vw;
+            height: 6vh;
+            background-size: 80%;
+            background-repeat: no-repeat;
+            background-position: 5px 2px;
+        }
+
+        &__text{
+            font-size: 0.8rem;
+            color: #ccc;
+        }
+    }
+}
+
+.user__data__name{
+    // border: 2px solid purple;
+    font-size: 2vw;
+    font-weight: bold;
+}
+
+.user__role{
+    // border: 2px solid cyan;
+    padding: 5px;
+    padding-left: 0px;
+    color: $primary-color;
+    font-weight: bold;
+}
+
+.user__ranking{
+    // border: 2px solid khaki;
+    color: #ccc;
+    font-size: 0.75em;
+    margin-top: 40px;
+    font-weight: bold;
+}
