@@ -1,0 +1,39 @@
+$shadow-color:#1183d6;
+
+nav{
+    margin-top: 70px;
+    // border: 2px solid red;
+    border-bottom: 1px solid #ccc;
+    display: flex;
+    gap: 40px;
+    a{
+        text-decoration: none;
+        color: black;
+    }
+}
+
+.Link1{
+    // border: 2px solid hotpink;
+    padding-left: 0px;
+    padding-right: 10px;
+    padding-bottom: 10px;
+}
+
+.Link1:hover{
+    border-bottom: 2px solid $shadow-color;
+}
+
+.Link2{
+    // border: 2px solid khaki;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-bottom: 10px;
+}
+
+.Link2:hover{
+    border-bottom: 2px solid $shadow-color;
+}
+
+// nav a.active{
+//     font-weight: bold;
+// }

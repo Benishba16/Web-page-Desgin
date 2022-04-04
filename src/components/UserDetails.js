@@ -1,10 +1,13 @@
 import React from 'react'
 import { connect } from "react-redux"
+import Navbar from './Navbar'
 import "./UserDetails.scss"
+import Work from './Work'
 
 function UserDetails(props) {
 
   return (
+    <div>
     <div className='entire'>
       <div className='user__image'></div>
       <div className='user__details'>
@@ -23,11 +26,21 @@ function UserDetails(props) {
         </div>
         <div className='user__role'>{props.role}</div>
         <div className='user__ranking'>
-          <div className='user__ranking_header'>RANKINGS</div>
-          <div className='user__ranking__rate'></div>
+          <div className='user__ranking__header'>RANKINGS</div>
+          <div className='user__ranking__rate'>
+            <div className='user__ranking__rate__point'>8,6</div>
+            <div className='user__ranking__rate__image'></div>
+          </div>
         </div>
-
+        <div className='user__navbar'>
+          <Navbar />
+        </div>
       </div>
+    </div>
+    <div className='work'>
+      <div className='work__header'>WORK </div>
+      <Work/>
+    </div>
     </div>
   )
 }

@@ -1,0 +1,80 @@
+$shadow-color:#1183d6;
+
+.about{
+    // border: 2px solid red;
+    margin-top: 50px;
+    &__navbar{
+        border-bottom-style: solid ;
+        border-bottom-color: #ccc;
+        border-bottom-width: thin;
+    }
+}
+
+.about__navbar{
+    // border: 2px solid hotpink;
+    ul{
+        display: flex;
+        list-style-type: none;
+        gap: 20px;
+        margin: 0;
+        padding: 0;
+    }
+}
+
+.navbar__list{
+    // border: 2px solid green;
+    display: flex;
+    align-items: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-right:10px ;
+    cursor: pointer;
+    // border-bottom: 2px solid #ccc;
+    &__image{
+        // border: 2px solid darkblue;
+        // background-image: url("http://assets.stickpng.com/images/580b585b2edbce24c47b2970.png");
+        background-image: url("./images/visible-gray.png");
+        background-repeat: no-repeat;
+        background-size: 90%;
+        background-position: 1.5px -5px;
+        width: 2vw;
+        height: 2vh;
+    }
+}
+
+.navbar__list:active
+{
+    background-color: #ccc;
+    border-bottom: 2px solid yellow;
+    font-weight: bold;
+}
+
+.navbar__list:hover{
+    border-bottom: 2px solid $shadow-color;
+    font-weight: bold;
+}
+
+.navbar__about{
+    // border: 2px solid fuchsia;
+    cursor: pointer;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-right:10px ;
+    display: flex;
+    align-items: center;
+    // border-bottom: 2px solid #ccc;
+    &__image{
+        // border: 2px solid navy;
+        background-image: url("https://cdn2.iconfinder.com/data/icons/ui-glyph-single-collection-002/400/UI_glyph_icons_single-37-512.png");
+        background-repeat: no-repeat;
+        height: 3vh;
+        width: 2vw;
+        background-size: 100%;
+        background-position: -1px -3px;
+    }
+}
+
+.navbar__about:hover{
+    border-bottom:2px solid $shadow-color;
+    font-weight: bold;
+}

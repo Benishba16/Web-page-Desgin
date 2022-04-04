@@ -1,0 +1,102 @@
+$shadow-color:#1183d6;
+
+.navbar{
+    margin-top: 35px;
+    // border: 2px solid red;
+    display: flex;
+    gap: 30px;
+    // width: 45vw;
+    font-weight: bold;
+    margin-left: -18px;
+
+    &__report{
+        // border: 2px solid navy;
+        display: flex;
+        align-items: center;
+        padding: 10px 20px;
+        cursor: pointer;
+    }
+
+    &__report:hover{
+        background-color: rgba(0, 181, 204,0.1);
+        color: $shadow-color;
+        border-radius: 2px;
+    }
+}
+
+.navbar__message{
+    // border: 2px solid hotpink;
+    padding: 10px 18px;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    &__image{
+        // border: 2px solid firebrick;
+        background-image: url("./images/mgs.jpg");
+         background-size: 60%;
+         background-position: 7px 1px;
+         background-repeat: no-repeat;
+         height: 3vh;
+         width: 2.5vw;
+    }
+
+}
+
+.navbar__message:hover{
+    // border: 2px solid lawngreen;
+    background-color: rgba(0, 181, 204,0.1);
+    color: $shadow-color;
+    // border-radius: 2px;
+    
+
+    // .navbar__message__image{
+    //     display: none;
+    // }
+
+    // .navbar__message__image{
+    //     display: none;
+    // }
+
+    .navbar__message__image:hover{
+        display: flex;
+        background-image: url("./images/mgsblue.png");
+        background-repeat: no-repeat;
+    }
+}
+
+.navbar__contacts{
+    // border: 2px solid saddlebrown;
+    display: flex;
+    align-items: center;
+    // gap: 8px;
+    padding: 10px 20px;
+    cursor: pointer;
+
+    &__text:hover{
+        span{
+            // display: block;
+            // flex-direction: row;
+            color: $shadow-color;
+        }
+    }
+    // &__image{
+    //     // border: 2px solid blue;
+    //     // background-image: url("https://d2gg9evh47fn9z.cloudfront.net/800px_COLOURBOX5697189.jpg");
+    //     // background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRR2u3K4ufZm-bZwFol0p0bj1I3aU9ZCiI7JtOl02hyjyVFmjmpvyHWgkDn7-KAIVvBp6Q&usqp=CAU");
+    //     background-size: 110%;
+    //     background-repeat: no-repeat;
+    //     background-position: -1px -4px;
+    //     height: 3vh;
+    //     width: 2vw;
+    // }
+
+    // &__text{
+
+    // }
+}
+
+.navbar__contacts:hover{
+    background-color: rgba(0, 181, 204,0.1);
+    color: $shadow-color;
+    border-radius: 2px;
+}
