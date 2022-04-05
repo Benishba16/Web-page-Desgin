@@ -1,14 +1,36 @@
 $primary-color:#40a5f3;
+$background-color: rgba(0, 181, 204,0.1);
+$border-color: #ccc;
+
+$tablet-view: 768px;
+
+.workheader{
+    // border: 2px solid red;
+    font-size: 0.7rem;
+    color: $border-color;
+    font-weight: bold;
+}
+
+.workheader::after {
+    // border: 2px solid green;
+    margin-top: 30px;
+    content: "";
+    display: inline-block;
+    width: 22vw;
+    margin-right: -100%;
+    margin-left: 5px;
+    border-bottom: 2px solid $border-color;
+}
 
 .workdata{
     // border: 2px solid green;
-    margin-top: 30px;
     span{
         font-weight: bold;
     }
 }
 
 .work1{
+    margin-top: 28px;
     // border: 2px solid cyan;
     display: flex;
     align-items: center;
@@ -16,7 +38,7 @@ $primary-color:#40a5f3;
 
     &__primary{
         padding: 10px;
-        background-color: rgba(0, 181, 204,0.1);
+        background-color: $background-color;
         color: $primary-color;
         font-weight: bold;
         font-size: 0.8rem;
@@ -25,7 +47,7 @@ $primary-color:#40a5f3;
     &__address{
         // border: 2px solid plum;
         font-size: 0.8rem;
-        color: #ccc;
+        color: $border-color;
         font-weight: bold;
         padding: 10px;
         padding-left: 0px;
@@ -52,7 +74,7 @@ $primary-color:#40a5f3;
 
     &__secondary{
         padding: 10px;
-        background-color: rgba(0, 181, 204,0.1);
+        background-color: $background-color;
         color: $primary-color;
         font-weight: bold;
         font-size: 0.8rem;
@@ -61,11 +83,11 @@ $primary-color:#40a5f3;
     &__address{
         // border: 2px solid plum;
         font-size: 0.8rem;
-        color: #ccc;
+        color: $border-color;
         font-weight: bold;
         padding: 10px;
         padding-left: 0px;
-        padding-top: 5px;
+        padding-top: 15px;
 
         div{
             // border: 2px solid yellow;
@@ -76,20 +98,21 @@ $primary-color:#40a5f3;
 }
 
 .skilldata{
-    margin-top: 15px;
+    margin-top: 25px;
     &__header{
         // border: 2px solid rebeccapurple;
         font-size: 0.7rem;
-        color: #ccc;
+        color: $border-color;
         font-weight: bold;
     }
     &__header:after{
         content: "";
         display: inline-block;
-        width: 22.5vw;
+        width: 22vw;
         height: 100%;
         margin-right: -100%;
-        border-bottom: 2px solid #ccc;
+        margin-left: 5px;
+        border-bottom: 2px solid $border-color;
     }
     &__list{
         // border: 2px solid purple;
@@ -100,4 +123,75 @@ $primary-color:#40a5f3;
             margin-bottom: 8px;
         }
     }
+}
+
+@media (max-width: $tablet-view) {
+    
+.workheader{
+    margin-top: 30px;
+    // border: 2px solid red;
+}
+
+.workheader::after {
+    // border: 2px solid green;
+    content: "";
+    display: inline-block;
+    width: 76vw;
+    margin-right: -100%;
+    margin-left: 5px;
+    border-bottom: 2px solid $border-color;
+}
+
+.work1{
+    // border: 2px solid cyan;
+    font-size: 1.2rem;
+    gap: 80px;
+
+    &__address{
+        // border: 2px solid plum;
+
+        div{
+            // border: 2px solid yellow;
+            font-size: 1rem;
+        }
+    }
+}
+
+.work2{
+    // border: 2px solid navy;
+    font-size: 1.2rem;
+    gap: 100px;
+
+    &__address{
+        // border: 2px solid plum;
+
+        div{
+            // border: 2px solid yellow;
+            font-size: 1rem;
+        }
+    }
+}
+
+.skilldata{
+    &__header{
+        font-size: 1rem;
+        // border: 2px solid rebeccapurple;
+    }
+    &__header:after{
+        content: "";
+        display: inline-block;
+        width: 76vw;
+        height: 100%;
+        margin-right: -100%;
+        margin-left: 5px;
+        border-bottom: 2px solid $border-color;
+    }
+    &__list{
+        // border: 2px solid purple;
+        div{
+            font-size: 1.2rem;
+            // border: 2px solid hotpink;
+        }
+    }
+}
 }

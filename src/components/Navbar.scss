@@ -1,11 +1,14 @@
 $shadow-color:#1183d6;
+$background-color:  rgba(0, 181, 204,0.1);
+$border-color: #ccc;
+
+$tablet-view: 768px;
 
 .navbar{
-    margin-top: 35px;
     // border: 2px solid red;
+    margin-top: 35px;
     display: flex;
     gap: 30px;
-    // width: 45vw;
     font-weight: bold;
     margin-left: -18px;
 
@@ -15,10 +18,11 @@ $shadow-color:#1183d6;
         align-items: center;
         padding: 10px 20px;
         cursor: pointer;
+        color: $border-color;
     }
 
     &__report:hover{
-        background-color: rgba(0, 181, 204,0.1);
+        background-color: $background-color;
         color: $shadow-color;
         border-radius: 2px;
     }
@@ -44,18 +48,8 @@ $shadow-color:#1183d6;
 
 .navbar__message:hover{
     // border: 2px solid lawngreen;
-    background-color: rgba(0, 181, 204,0.1);
+    background-color: $background-color;
     color: $shadow-color;
-    // border-radius: 2px;
-    
-
-    // .navbar__message__image{
-    //     display: none;
-    // }
-
-    // .navbar__message__image{
-    //     display: none;
-    // }
 
     .navbar__message__image:hover{
         display: flex;
@@ -68,35 +62,40 @@ $shadow-color:#1183d6;
     // border: 2px solid saddlebrown;
     display: flex;
     align-items: center;
-    // gap: 8px;
     padding: 10px 20px;
     cursor: pointer;
+    color: $border-color;
 
     &__text:hover{
         span{
-            // display: block;
-            // flex-direction: row;
             color: $shadow-color;
         }
     }
-    // &__image{
-    //     // border: 2px solid blue;
-    //     // background-image: url("https://d2gg9evh47fn9z.cloudfront.net/800px_COLOURBOX5697189.jpg");
-    //     // background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRR2u3K4ufZm-bZwFol0p0bj1I3aU9ZCiI7JtOl02hyjyVFmjmpvyHWgkDn7-KAIVvBp6Q&usqp=CAU");
-    //     background-size: 110%;
-    //     background-repeat: no-repeat;
-    //     background-position: -1px -4px;
-    //     height: 3vh;
-    //     width: 2vw;
-    // }
-
-    // &__text{
-
-    // }
 }
 
 .navbar__contacts:hover{
-    background-color: rgba(0, 181, 204,0.1);
+    background-color: $background-color;
     color: $shadow-color;
     border-radius: 2px;
+}
+
+@media (max-width: $tablet-view) {
+    .navbar{
+        // border: 2px solid red;
+        font-size: 1.2rem;
+        justify-content: center;
+        margin-top: 50px;
+    }
+    
+    .navbar__message{
+        // border: 2px solid hotpink;
+        gap: 10px;
+        &__image{
+            // border: 2px solid firebrick;
+            background-size: 100%;
+            background-position: -0.5px -0.1px;
+            width: 3vw;
+            height: 3vh;
+        }
+    }
 }

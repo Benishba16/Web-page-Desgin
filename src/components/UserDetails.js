@@ -8,17 +8,17 @@ function UserDetails(props) {
 
   return (
     <div>
-    <div className='entire'>
-      <div className='user__image'></div>
-      <div className='user__details'>
-        <div className='user__data'>
-          <div className='user__data__info'>
-            <div className='user__data__name'>{props.name}</div>
-            <div className='user__data__city'>
-              <div className='user__data__city__location'></div>
-              <div className='user__data__city__name'>{props.city}</div>
+      <div className='entire'>
+        <div className='user__image'></div>
+        <div className='user__details'>
+          <div className='user__data'>
+            <div className='user__data__info'>
+              <div className='user__data__name'>{props.name}</div>
+              <div className='user__data__city'>
+                <div className='user__data__city__location'></div>
+                <div className='user__data__city__name'>{props.city}</div>
+              </div>
             </div>
-          </div>
           <div className='user__data__bookmark'>
             <div className='user__data__bookmark__image'></div>
             <div className='user__data__bookmark__text'>Bookmark</div>
@@ -38,9 +38,8 @@ function UserDetails(props) {
       </div>
     </div>
     <div className='work'>
-      <div className='work__header'>WORK </div>
-      <Work/>
-    </div>
+        <Work/>
+      </div>
     </div>
   )
 }

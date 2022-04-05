@@ -7,6 +7,10 @@ const initialState = {
     phone: "+1 123 456 7890",
     address: `525 E 68th Street 
     New York, NY 10651-78 156-187-60`,
+    // address: {
+    //     address1: "525 E 68th Street",
+    //     address2: "New York, NY 10651-78 156-187-60"
+    // },
     email: "hello@jeremyrose.com",
     site: "www.jeremyrose.com",
     birthday: "June 5, 1992",

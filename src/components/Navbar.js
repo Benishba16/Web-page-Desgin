@@ -1,5 +1,4 @@
 import React from 'react'
-// import About from './About'
 import "./Navbar.scss"
 import { Route, Routes } from "react-router-dom"
 import TimeLine from "./TimeLine"
@@ -21,12 +20,11 @@ function Navbar() {
         <div className='navbar__report'>Report user</div>
       </div>
       <div>
-        {/* <About/> */}
         <NavigationBar />
-        <Routes>
-          <Route path='/' element={<TimeLine />}/>
-          <Route path='about' element={<Contact />}/>
-        </Routes>
+          <Routes>
+            <Route path='/' element={<TimeLine />}/>
+            <Route path='about' element={<Contact />}/>
+          </Routes>
       </div>
     </div>
   )

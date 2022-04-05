@@ -12,8 +12,14 @@ function NavigationBar() {
      
   return (
     <nav style={{textDecoration: "none"}}>
-        <NavLink className="Link1" style={navLink}  to="/">Timeline</NavLink>
-        <NavLink className="Link2" style={navLink}  to="about">About</NavLink>
+        <NavLink className="Link1" style={navLink}  to="/">
+          <div className='Link1__image'></div>
+          <div className='Link2__text'>Timeline</div>
+        </NavLink>
+        <NavLink className="Link2" style={navLink}  to="about">
+          <div className='Link2__image'></div>
+          <div className='Link2__text'>About</div>
+        </NavLink>
     </nav>
   )
 }

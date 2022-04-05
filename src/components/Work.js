@@ -5,6 +5,7 @@ import "./Work.scss"
 function Work(props) {
   return (
     <div>
+      <div className='workheader'>WORK </div>
       <div className="workdata">
         <div>
           <div className='work1'>

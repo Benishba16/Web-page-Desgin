@@ -1,53 +1,69 @@
 $shadow-color:#40a5f3;
-// $shadow-color:hsla(207, 90%, 61%,0.8);
+$border-color: #ccc;
+
+$tablet-view: 768px;
 
 .contact{
     // border:  2px solid red;
+    padding: 5px;
+    padding-left: 0px;
+    padding-top: 0px;
     font-weight: bold;
     width: 40vw;
-    margin-top: 40px;
+    margin-top: 45px;
     &__header{
-        color: #ccc;
+        padding: 5px;
+        padding-left: 0px;
+        color: $border-color;
         font-size: 0.7rem;
         font-weight: bold;
     }
 
     &__details{
         // border: 2px solid teal;
-        margin-top: 20px;
+        margin-top: 25px;
     }
 
     &__data{
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
         // border: 2px solid green;
+        display: flex;
+        // align-items: center;
+        justify-content: space-between;
         padding: 10px;
         padding-left: 0px;
+        padding-top: 0px;
         margin-bottom: 15px;
         span{
             color: $shadow-color;
         }
+        // .value__address{
+        //     border: 2px solid purple;
+        // }
     }
 
     &__value{
-        width: 50%;
         // border: 2px solid red;
+        width: 50%;
         margin-right: 120px;
     }
 }
 
+// .address{
+//     border: 2px solid black;
+// }
+
+
 .basic{
+    // border: 2px solid red;
     margin-top: 40px;
     font-weight: bold;
     width: 40vw;
-    // border: 2px solid red;
     &__data{
         // border: 2px solid goldenrod;
         margin-top: 20px;
     }
     &__header{
-        color: #ccc;
+        color: $border-color;
         font-size: 0.75rem;
         font-weight: bold;
     }
@@ -62,8 +78,45 @@ $shadow-color:#40a5f3;
     }
 
     &__value{
+        // border: 2px solid pink;
         width: 50%;
         margin-right: 120px;
-        // border: 2px solid pink;
+    }
+}
+
+@media (max-width: $tablet-view) {
+    .contact{
+        // border:  2px solid red;
+        width: 50vw;
+        margin-left: 180px;
+
+        &__header{
+            // border: 2px solid black;
+            margin-left: -180px;
+        }
+    
+        &__details{
+            // border: 2px solid teal;
+            margin-left: -150px;
+        }
+    
+        &__value{
+            // border: 2px solid red;
+            margin-right: 10px;
+        }
+    }
+    
+    .basic{
+        // border: 2px solid red;
+        width: 75vw;
+        &__text{
+            // border: 2px solid green;
+            margin-left: 30px;
+        }
+    
+        &__value{
+            // border: 2px solid pink;
+            margin-right: 10px;
+        }
     }
 }

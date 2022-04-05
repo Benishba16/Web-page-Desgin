@@ -1,4 +1,8 @@
-$shadow-color:#1183d6;
+$shadow-color:#40a5f3;
+$background-color: rgba(0, 181, 204,0.1);
+$border-color: #ccc;
+
+$tablet-view: 768px;
 
 .container{
     // border: 2px solid black;
@@ -65,13 +69,14 @@ $shadow-color:#1183d6;
         padding-left: 25px;
         color: black;
         font-weight: 900;
+        text-decoration: none;
     }
 
         input:focus {
-            box-shadow: 0 0 3px 0 #1890ff;
+            box-shadow: 0 0 3px 0 $shadow-color;
             outline: none;
             border: none;
-            border-radius: 3px solid #1890ff;
+            border-radius: 3px solid $shadow-color;
         }
     }
 }
@@ -142,11 +147,79 @@ $shadow-color:#1183d6;
         height: 1vh;
         border-radius: 3px;
         color: $shadow-color;
-        background-color: rgba(0, 181, 204,0.1);
+        background-color: $background-color
     }
 }
 
 .horizontal__line{
-    border: 1.5px solid #ccc;
+    border: 1.5px solid $border-color;
     opacity: 0.5;
+}
+
+@media (max-width: $tablet-view) {
+    .container{
+        // border: 2px solid black;
+        display: block;
+    }
+    
+    .header__1{
+        // border: 2px solid green;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    
+        &__logo{
+            // border: 2px solid red;
+            background-image: url("./images/dropletlogo.png");
+            background-repeat: no-repeat;
+            background-size: contain;
+            width: 8vw;
+            height: 8vw;
+            border-radius: 50%;
+        }
+
+        &__title{
+            // border: 2px solid green;
+            font-size: 2rem;
+        }
+    
+    
+        &__search {
+            input {
+            // border: 2px solid yellow;
+            width: 30vw;
+            }
+        }
+    }
+    
+    .header__2{
+        // border: 2px solid magenta;
+        margin-top: 20px;
+        display: flex;
+        justify-content: center;
+        &__para__1,&__para__2, &__para__3{
+            // border: 2px solid yellow;
+            font-size: 1rem;
+        }
+    
+        &__para__image{
+            // border: 2px solid black;
+            width: 7vw;
+            height: 7vw;
+            background-size: 105%;
+            span{
+                height: 1.5vh;
+                width: 1.5vw;
+                border: 3px solid white;
+                background-color: #99d98c;
+                background-size: 100%;
+                border-radius: 100%;
+                margin-left: 35px;
+                margin-top: -65px;
+                margin-bottom: -25px;
+                margin-right: -4px;
+            }
+        }
+    }
+
 }
