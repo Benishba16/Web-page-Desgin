@@ -6,7 +6,8 @@ function NavigationBar() {
     const navLink = ({ isActive }) => {
         return {
             fontWeight: isActive ? "bold" : "normal",
-            borderBottom: isActive ? "2px solid #1183d6" : null
+            borderBottom: isActive ? "2px solid #1183d6" : null,
+            color: isActive ? "black" : "#ccc"
         }
     }
      

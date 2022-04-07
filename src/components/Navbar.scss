@@ -3,6 +3,7 @@ $background-color:  rgba(0, 181, 204,0.1);
 $border-color: #ccc;
 
 $tablet-view: 768px;
+$mobile-view: 360px;
 
 .navbar{
     // border: 2px solid red;
@@ -84,7 +85,7 @@ $tablet-view: 768px;
         // border: 2px solid red;
         font-size: 1.2rem;
         justify-content: center;
-        margin-top: 50px;
+        margin-top: 60px;
     }
     
     .navbar__message{
@@ -96,6 +97,69 @@ $tablet-view: 768px;
             background-position: -0.5px -0.1px;
             width: 3vw;
             height: 3vh;
+        }
+    }
+}
+
+@media (max-width: $mobile-view) {
+    .navbar{
+        // border: 2px solid red;
+        flex-direction: column;
+        font-size: 1.1rem;
+        margin-left: 5px;
+        margin-top: 30px;
+
+        &__report{
+            width: 50vw;
+        }
+    }
+    
+    .navbar__message{
+        // border: 2px solid hotpink;
+        width: 50vw;
+        &__image{
+            // border: 2px solid firebrick;
+            background-size: 100%;
+            width: 6vw;
+            height: 3vh;
+        }
+    }
+
+    .navbar__contacts{
+        // border: 2px solid saddlebrown;
+        width: 50vw;
+    }
+}
+
+@media (max-width: 480px) {
+    .navbar{
+        width: 150vw;
+        // border: 2px solid red;
+        margin-top: 15px;
+        gap: 10px;
+        margin-left: -160px;
+        font-size: 0.8rem;
+
+        &__message__text{
+            // border: 2px solid black;
+            width: 20vw;
+        }
+
+        &__contacts__text{
+            // border: 2px solid green;
+            width: 15vw;
+        }
+
+        &__message__image{
+            // border: 2px solid black;
+            width: 3vw;
+            height: 3vh;
+            background-position: 1px 2px;
+        }
+
+        &__report{
+            // border: 2px solid navy;
+            width: 17vw;
         }
     }
 }

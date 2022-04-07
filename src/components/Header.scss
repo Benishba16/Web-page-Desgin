@@ -3,6 +3,7 @@ $background-color: rgba(0, 181, 204,0.1);
 $border-color: #ccc;
 
 $tablet-view: 768px;
+$mobile-view: 360px;
 
 .container{
     // border: 2px solid black;
@@ -45,6 +46,7 @@ $tablet-view: 768px;
     }
 
     &__title{
+        // border: 2px solid rebeccapurple;
         margin-left: -35px;
         span{
             font-weight: bold;
@@ -52,8 +54,10 @@ $tablet-view: 768px;
     }
 
     &__search {
+        // border: 2px solid green;
         input {
-        // border: 2px solid yellow;
+        // border: 2px solid red;
+        font-family: "FrutigerNeueLTW1G";
         background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQLdBmPu0oQfvy7RAuhcuOJfvL9QYbN_hcOdebOR6966-KnZvIjpVrfg1WV6hMZ5wYuzyY&usqp=CAU");
         background-repeat: no-repeat;
         background-position: 25px 12px;
@@ -64,7 +68,7 @@ $tablet-view: 768px;
         height: 4vh;
         font-size: 16px;
         border: 1.5px solid rgba(193, 189, 189, 0.4);
-        margin-left: -10px;
+        // margin-left: -10px;
         text-indent: 30px;
         padding-left: 25px;
         color: black;
@@ -156,6 +160,13 @@ $tablet-view: 768px;
     opacity: 0.5;
 }
 
+.button{
+    display: none;
+    // display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
 @media (max-width: $tablet-view) {
     .container{
         // border: 2px solid black;
@@ -172,7 +183,7 @@ $tablet-view: 768px;
             // border: 2px solid red;
             background-image: url("./images/dropletlogo.png");
             background-repeat: no-repeat;
-            background-size: contain;
+            background-size: 100%;
             width: 8vw;
             height: 8vw;
             border-radius: 50%;
@@ -208,18 +219,110 @@ $tablet-view: 768px;
             height: 7vw;
             background-size: 105%;
             span{
-                height: 1.5vh;
+                height: 2vh;
                 width: 1.5vw;
                 border: 3px solid white;
                 background-color: #99d98c;
                 background-size: 100%;
                 border-radius: 100%;
                 margin-left: 35px;
-                margin-top: -65px;
+                margin-top: -67px;
                 margin-bottom: -25px;
                 margin-right: -4px;
             }
         }
+    }
+
+    .button{
+        display: none;
+    }
+
+}
+
+@media (max-width: $mobile-view) {
+    .container{
+        // border: 2px solid black;
+        display: block;
+        width: 100vw;
+        margin-left: 120px;
+    }
+    
+    .header__1{
+        // border: 2px solid green;
+        display: block;
+    
+        &__logo{
+            // border: 2px solid red;
+            background-image: url("./images/dropletlogo.png");
+            background-repeat: no-repeat;
+            background-size: 100%;
+            width: 20vw;
+            height: 20vw;
+            border-radius: 50%;
+        }
+
+        &__title{
+            // border: 2px solid green;
+            font-size: 3rem;
+        }
+    
+    
+        &__search {
+            // border: 2px solid darkmagenta;
+            padding: 15px;
+            display: none;
+            align-items: center;
+            justify-content: center;
+            margin-top: 20px;
+            margin-bottom: -20px;
+            input {
+            // border: 2px solid yellow;
+            width: 70vw;
+            height: 5vh;
+            font-size: 1.5rem;
+            background-size: 30px;
+            text-indent: 50px;
+            }
+        }
+    }
+    
+    .header__2{
+        // border: 2px solid magenta;
+        width: 130vw;
+        margin-left: -65px;
+    //     margin-top: 20px;
+        justify-content: space-between;
+        gap: 10px;
+        display: none;
+        &__para__1,&__para__2, &__para__3{
+            // border: 2px solid yellow;
+            font-size: 1.2rem;
+        }
+    
+        &__para__image{
+            display: none;
+    //         // border: 2px solid black;
+    //         width: 7vw;
+    //         height: 7vw;
+    //         background-size: 105%;
+    //         span{
+    //             height: 1.5vh;
+    //             width: 1.5vw;
+    //             border: 3px solid white;
+    //             background-color: #99d98c;
+    //             background-size: 100%;
+    //             border-radius: 100%;
+    //             margin-left: 35px;
+    //             margin-top: -65px;
+    //             margin-bottom: -25px;
+    //             margin-right: -4px;
+    //         }
+        }
+    }
+
+    .horizontal__line{
+        // border: 2px solid salmon;
+        width: 166vw;
     }
 
 }

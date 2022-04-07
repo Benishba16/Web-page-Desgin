@@ -2,6 +2,7 @@ $primary-color:#40a5f3;
 $border-color: #ccc;
 
 $tablet-view: 768px;
+$mobile-view: 360px;
 
 .entire{
     margin-left: 70px;
@@ -15,7 +16,7 @@ $tablet-view: 768px;
     background-image: url("./images/images.jpg");
     width: 50vw;
     height: 50vh;
-    background-size: contain;
+    background-size: 85%;
     background-repeat: no-repeat;
 }
 
@@ -67,7 +68,7 @@ $tablet-view: 768px;
             background-image: url("./images/Book1.png");
             width: 2vw;
             height: 4vh;
-            background-size: 90%;
+            background-size: 80%;
             background-repeat: no-repeat;
             background-position: 1px 3px;
         }
@@ -120,7 +121,7 @@ $tablet-view: 768px;
         background-image: url("./images/45stars.png");
         width: 10vw;
         height: 3vh;
-        background-size: 110%;
+        background-size: 100%;
         background-repeat: no-repeat;
         }
     }
@@ -134,16 +135,25 @@ $tablet-view: 768px;
 }
 
 @media (max-width: $tablet-view) {
+    .entire{
+        // border: 2px solid green;
+        display: block;
+    }
     .user__image{
         // border: 2px solid black;
-        display: none;
-        height: 8vh;
+        // display: none;
+        background-size: 100%;
+        width: 30vw;
+        height: 40vh;
         
     }
     
     .user__data{
         // border: 2px solid red;
-        width: 75vw;
+        // width: 75vw;
+        margin-top: -200px;
+        margin-left: 218px;
+        justify-content: flex-end;
 
         &__name{
             // border: 2px solid green;
@@ -174,7 +184,7 @@ $tablet-view: 768px;
     .user__role{
         // border: 2px solid cyan;
         margin-top: 10px;
-        margin-left: 45px;
+        margin-left: 110px;
         display: flex;
         justify-content: center;
     }
@@ -183,15 +193,17 @@ $tablet-view: 768px;
         &__header{
             // border: 2px solid firebrick;
             font-size: 1.1rem;
+            margin-left: 295px;
         }
     
         &__rate{
             // border: 2px solid green;
+            margin-left: 295px;
             &__image{
             // border: 2px solid black;
             background-size: 120%;
             width: 20vw;
-            height: 4vh;
+            height: 5vh;
             }
         }
     }
@@ -210,5 +222,102 @@ $tablet-view: 768px;
         // border: 2px solid hotpink;
         margin-left: 70px;
         width: 82vw;
+    }
+}
+
+@media (max-width: $mobile-view) {
+    .user__image{
+        // border: 2px solid black;
+        height: 18vh;
+        background-size: 100%;
+        background-position: -10px -1px;
+        
+    }
+    
+    .user__data{
+        // border: 2px solid red;
+        display: block;
+        margin-top: -100px;
+        margin-left: 120px;
+
+        &__name{
+            // border: 2px solid green;
+            font-size: 2em;
+        }
+    
+        &__info{
+            // border: 2px solid yellow; 
+            display: block;
+        }
+    
+        &__city{
+            // border: 2px solid blue;
+            padding-top: 5px;
+
+            &__location{
+                // border: 2px solid lawngreen;
+                width: 6vw;
+                height: 5vh;
+                background-size: 120%;
+                background-position: -2px -2px;
+            }
+
+            &__name{
+                margin-bottom: 5px;
+                font-size: 1rem;
+            }
+        }
+    
+        &__bookmark{
+            display: none;
+        }
+    }
+    
+    .user__role{
+        // border: 2px solid cyan;
+        margin-left: 165px;
+        justify-content: flex-start;
+        width: 100vw;
+        font-size: 1.2rem;
+    }
+    
+    .user__ranking{
+        &__header{
+            // border: 2px solid firebrick;
+            font-size: 1.5rem;
+            width: 100vw;
+            margin-left: 0px;
+        }
+    
+        &__rate{
+            // border: 2px solid green;
+            width: 100vw;
+            margin-left: 0px;
+            &__image{
+            // border: 2px solid black;
+            background-size: 100%;
+            width: 50vw;
+            height: 5vh;
+            }
+        }
+    }
+
+    .user__navbar{
+        // border: 2px solid pink;
+        display: block;
+        margin: 0px;
+        width: 100vw;
+    }
+    
+    .work{
+        // border: 2px solid maroon;
+        width: 100vw;
+    }
+}
+
+@media (max-width: 480px) {
+    .user__ranking{
+        border: 2px solid red;
+        margin-left: -297px;
     }
 }

@@ -15,8 +15,13 @@ function Header() {
             </div>
         </div>
 
-        <div className='header__2'>
-          <div className='header__2__para__1'>Find people</div>
+      <div className='button'>
+        <button>BTN</button>
+      </div>
+      
+
+      <div className='header__2'>
+        <div className='header__2__para__1'>Find people</div>
           <div className='header__2__para__2'>
             <div className='header__2__para__text'>Messages</div>
             <div className='header__2__para__box'>4</div>

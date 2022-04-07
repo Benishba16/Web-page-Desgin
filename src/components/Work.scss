@@ -3,6 +3,7 @@ $background-color: rgba(0, 181, 204,0.1);
 $border-color: #ccc;
 
 $tablet-view: 768px;
+$mobile-view: 360px;
 
 .workheader{
     // border: 2px solid red;
@@ -145,7 +146,6 @@ $tablet-view: 768px;
 .work1{
     // border: 2px solid cyan;
     font-size: 1.2rem;
-    gap: 80px;
 
     &__address{
         // border: 2px solid plum;
@@ -160,7 +160,7 @@ $tablet-view: 768px;
 .work2{
     // border: 2px solid navy;
     font-size: 1.2rem;
-    gap: 100px;
+    gap: 120px;
 
     &__address{
         // border: 2px solid plum;
@@ -173,10 +173,6 @@ $tablet-view: 768px;
 }
 
 .skilldata{
-    &__header{
-        font-size: 1rem;
-        // border: 2px solid rebeccapurple;
-    }
     &__header:after{
         content: "";
         display: inline-block;
@@ -195,3 +191,17 @@ $tablet-view: 768px;
     }
 }
 }
+
+@media (max-width: $mobile-view) {
+    
+    .workheader::after {
+        // border: 2px solid green;
+        width: 85vw;
+    }
+    
+    .skilldata{
+        &__header:after{
+            width: 85vw;
+        }
+    }
+    }
